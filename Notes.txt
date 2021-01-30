@@ -1,0 +1,6 @@
+-> Class'lar public, protected olarak tanýmlanabilir. Eðer herhangi bir taným yapýlmamýþsa default olarak Internal olarak tanýmlanmýþ olur.
+	-> Public class: Solution içindeki tüm projeler tarafýndan eriþim saðlanabilir.
+	-> Protected class: Solution içindeki hiç bir proje tarafýndan miras(Inheritance) alýnmamýþsa eriþim saðlanamaz.
+	-> Internal class: Solution içindeki hiçbir projeden eriþim saðlanamaz. Misras alýnmýþ olsa bile. Sadece ilgili projenin eriþebileceði anlamýný taþýr.
+
+-> 
