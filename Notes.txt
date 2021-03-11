@@ -3,4 +3,12 @@
 	-> Protected class: Solution içindeki hiç bir proje tarafýndan miras(Inheritance) alýnmamýþsa eriþim saðlanamaz.
 	-> Internal class: Solution içindeki hiçbir projeden eriþim saðlanamaz. Misras alýnmýþ olsa bile. Sadece ilgili projenin eriþebileceði anlamýný taþýr.
 
--> 
+-> Data Access
+	-> Veri Eriþim Kodlarý
+-> Business
+	-> Ýþ Kodlarý
+	-> Ýþ Kurallarý
+-> API (Web Service)
+	-> RestFull (json formatý)
+-> UI(User Interface)
+	-> ASP.NET, Android, IOS, etc.
