@@ -1,3 +1,5 @@
+--- Lesson 07 ---
+
 -> Class'lar public, protected olarak tanýmlanabilir. Eðer herhangi bir taným yapýlmamýþsa default olarak Internal olarak tanýmlanmýþ olur.
 	-> Public class: Solution içindeki tüm projeler tarafýndan eriþim saðlanabilir.
 	-> Protected class: Solution içindeki hiç bir proje tarafýndan miras(Inheritance) alýnmamýþsa eriþim saðlanamaz.
@@ -12,3 +14,70 @@
 	-> RestFull (json formatý)
 -> UI(User Interface)
 	-> ASP.NET, Android, IOS, etc.
+
+-> Blank Solution
+	->	Add NewProject
+		->	DataAccess
+			->	Add NewFolder
+				->	Abstract
+					*	Soyut(Abstract, Interface, Base) Classlar Bu Klasöründe Tanýmlanýr.
+				->	Concrete
+					*	Somut() Classlar Bu Klasörde Tanýmlanýr. 
+					*	Add -> New Class
+						*	Classlar default olarak Internal Tanýmlýdýr. Public, Protected, Private deðildir.
+						*	Burdaki Classý Public olarak tanýmlanýr. Tüm Katmanlar tarafýndan eriþim saðlanmasý içindir.
+						*	Internal tanýmlý demek Sadece ilgili Proje(Katman) içerisinden ulaþým saðlanabilir demektir.
+		->	Business
+			->	Add NewFolder
+				->	Abstract
+					*	Soyut(Abstract, Interface, Base) Classlar Bu Klasöründe Tanýmlanýr.
+				->	Concrete
+					*	Somut() Classlar Bu Klasörde Tanýmlanýr. 
+					*	Add -> New Class
+						*	Classlar default olarak Internal Tanýmlýdýr. Public, Protected, Private deðildir.
+						*	Burdaki Classý Public olarak tanýmlanýr. Tüm Katmanlar tarafýndan eriþim saðlanmasý içindir.
+						*	Internal tanýmlý demek Sadece ilgili Proje(Katman) içerisinden ulaþým saðlanabilir demektir.
+		->	Entities
+			->	Add NewFolder
+				->	Abstract
+					*	Soyut(Abstract, Interface, Base) Classlar Bu Klasöründe Tanýmlanýr.
+				->	Concrete
+					*	Somut() Classlar Bu Klasörde Tanýmlanýr.
+					*	Add -> New Class
+						*	Classlar default olarak Internal Tanýmlýdýr. Public, Protected, Private deðildir.
+						*	Burdaki Classý Public olarak tanýmlanýr. Tüm Katmanlar tarafýndan eriþim saðlanmasý içindir.
+						*	Internal tanýmlý demek Sadece ilgili Proje(Katman) içerisinden ulaþým saðlanabilir demektir.
+		->	ConsoleUI
+			*	Set as StartUp Project (Projenin ConsoleUI ile baþlayacaðý belirtilir.)
+
+
+->	Entities = 
+	->	IEntity = Interface
+		*	IEntity implement eden class bir veritabaný tablosudur.
+		*	IEntity bir veri tabaný nesnesidir.
+->	DataAccess = Veri Eriþimi
+	*	Veri Eriþimi yapýlacak alandýr.
+	*	Entity de oluþturulan nesnelerin Interfaceleri DataAccess Abstract ta oluþturulmalýdýr.
+->	Business = Ýþ Kurallarý
+	*	Ýlk yapýlan iþlem tabiki interface oluþturmaktýr.
+
+
+--- LESSON 8 ---
+
+->  Expression:
+    *   Fonksiyonumuzun içerisine LINQ kodu ile istenilen filtreye göre veritabanýndan sonuç döndürmesidir.
+    *   filter = null ile istenilirse bir filtre tanýmlanmayabilir özelliði kazanmýþtýr.
+    *   filter ile filtre vermek zorunludur özelliði kazanmýþtýr.
+->  T Get(Expression<Func<T, bool>> filter); method'u ile istenilen tek bir veri çekilebilir.
+
+->	EntityFramework
+	*	Microsoft ürünüdür.
+	*	ORM: Object Relational Mapping
+	*	LINQ destekli çalýþýr.
+	*	ORM: Veritabanýndaki tablolarý bir class'mýþ gibi LINQ ile kullanýlabilen bir yapýdýr.
+	
+
+
+
+
+
