@@ -68,6 +68,7 @@
     *   Fonksiyonumuzun içerisine LINQ kodu ile istenilen filtreye göre veritabanýndan sonuç döndürmesidir.
     *   filter = null ile istenilirse bir filtre tanýmlanmayabilir özelliði kazanmýþtýr.
     *   filter ile filtre vermek zorunludur özelliði kazanmýþtýr.
+
 ->  T Get(Expression<Func<T, bool>> filter); method'u ile istenilen tek bir veri çekilebilir.
 
 ->	EntityFramework
@@ -86,6 +87,7 @@
 			*	C# özel yapýlarýndan biridir.
 			*	using içine yazýlan nesneler iþi bitince hemen atýlmasý için kullanýlýr.Garbage Collector ile saðlanýr.
 
+->	Oluþturduðumuz katmanlý yapý sayesinde yeni oluþturulan EntityFramework klasörü eklenmiþ olsa da Business katmanýnda hiçbir deðiþiklik yapýlmadý. Çünkü Business katmaný DataAccess ya da Entites katmanlarýna baðýmlý deðildir.
 
 
 
